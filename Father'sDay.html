@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Father's Day
+        </title>
+        <style>
+            body{
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                position: relative;
+                margin-top: 12%;
+            }
+            .slides img{
+                position: fixed;
+                bottom: 0;
+                left: 30%;
+                justify-content: center;
+                width: 35%;
+                height: 35%;
+                transition: transform 0.5s ease-in-out;
+                filter: drop-shadow(0 0 0.75rem rgb(248, 246, 247));
+                filter: brightness(50%) contrast(95%);
+            }
+            .slides img:hover {
+                transform: scale(1.2);
+                filter: brightness(70%) contrast(90%);
+            }
+            #animatedText {
+                font-size: 24px;
+                animation: moveToTop 1s forwards;
+                width: 100%;
+            }
+            @keyframes moveToTop {
+                0%{
+                    bottom: 0;
+                    transform: translateY(0);
+                }
+                70% {
+                    bottom: 80%;
+                    transform: translateY(-80%);
+                }
+            }
+            .main {
+            left: -10%;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            justify-content: center;
+            display: flex;
+            justify-content: bottom;
+            width: 120vw;
+            span {
+            -webkit-text-stroke-width: 2px;
+            font-size: 80px;
+            
+            text-shadow: 0 0px #8884a0, 0 0px #5d647cd9;
+            transform: translate(0, 80%) rotate(4deg);
+            animation: jump 3s ease-in-out infinite;
+            display: flex;
+            font-family: "Bodoni MT Black", cursive;
+            color: #fcf8fb;
+
+            @for $i from 1 through 7 {
+            &:nth-child(#{$i}) {
+            animation-delay: 120ms * $i;
+            }
+            }
+            }
+            }
+            @keyframes jump {
+            33% {
+                text-shadow: 0 60px #e4e8e3, 0 110px #86869f;
+            }
+            50% {
+                transform: translate(0, 0) rotate(-4deg);
+                text-shadow: 0 0px #232323, 0 0px #080909;
+            }
+            60.67% {
+                text-shadow: 0 -60px #888a886e, 0 -110px #626464b1;
+            }
+            @media screen and (max-height: 100px) {
+            .main {
+                transform: scale(0.3,0.3);
+            }
+            }
+            
+        </style>
+    </head>
+        <body background="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHg2NjFmZml4YTd6bTlkOXkza2szMGJueHI4Zm4zcnhtYWtyZWJuayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Rpg08oZ3MzkdOWjm8c/giphy.webp">
+        <div class="main">
+            <p class="slides">
+                <a href="C:\Users\swana\Swananada\Mini projects\Father's day\page_2.html" target="_blank">
+                <img src="C:\Users\swana\Swananada\Mini projects\Father's day\black_flower-removebg-preview.png" alt="couldn't load"></a>
+            </p>
+            <span>H</span>
+            <span>A</span>
+            <span>P</span>
+            <span>P</span>
+            <span>Y</span>
+            <span>F</span>
+            <span>A</span>
+            <span>T</span>
+            <span>H</span>
+            <span>E</span>
+            <span>R'</span>
+            <span>S</span>
+            <span>D</span>
+            <span>A</span>
+            <span>Y</span>
+          </div>
+        
+    </body>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Father's Day</title>
+    <style>
+        .img-1 {
+            bottom: 0%;
+            right: -6%;
+            position: fixed;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s ease; /* Safari */
+            transition-duration: 0.4s;
+            filter: brightness(60%) contrast(70%);
+        }
+        .img-1:hover {
+            transform: scale(1.2);
+            filter: brightness(70%) contrast(90%);
+        }
+        body {
+            background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmltN3p2bzN4ZW4zZWw1N3IwMWhmdnU1cGl4ajR5cnl3d245dnNodSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKoWXm3okO1kgHC/giphy.webp');
+            background-size: cover;
+            top: -20%;
+            padding: 40vh 30vw;
+            color: hsl(207, 100%, 2%);
+            font-family: 'Gochi Hand', cursive;
+            text-align: left;
+            font-size: 130%; 
+            position: fixed; 
+        }
+        h2 {
+            line-height: 1.5;
+            display: inline;
+            background-image: linear-gradient(
+                transparent 50%,
+                #e1fffe 50%,
+                #b0f8ff 85%,
+                transparent 85%,
+                transparent 100%
+            );
+            background-repeat: no-repeat;
+            background-size: 0% 100%;
+            animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+        }
+        @keyframes animatedBackground {
+            to {
+                background-size: 100% 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Papa, thank you for your time, which you give daily; your care, which you give freely and your love, which you give unconditionally. Every year, I learn to appreciate more the values you passed on to me. There's no one I'd rather look up to than you. Happy Father's Day to my biggest hero!</h2>
+    <div class="img-1" id="lifting_up">
+        <img src="C:\Users\swana\Swananada\Mini projects\Father's day\Friends-Hug-GIF-by-Biteable-unscreen.gif" alt="Friends Hug GIF">
+    </div>
+</body>
+</html>
